@@ -1,0 +1,7 @@
+! Xterm configuration: black background, white text, blue cursor, and Terminus 12 font
+xterm*background: black
+xterm*foreground: white
+xterm*cursorColor: blue
+! xterm*font: -Misc-Terminus-medium-r-normal--12-120-75-75-c-60-iso10646-1
+XTerm*faceName: Terminus
+XTerm*faceSize: 13
