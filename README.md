@@ -15,4 +15,5 @@ Here is a summary of the main tools and programs I use on a daily basis:
 | **Main Editor** | [Vim, Neovim] |
 | **Multiplexer** | [Tmux] |
 | **Theme / Colors** | [Gruvbox, Monochromatic] |
+| **Git** | [Cli, Lazygit] |
 | **Font** | [JetBrains Mono Nerd Font] |
