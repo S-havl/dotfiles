@@ -1,6 +1,12 @@
 # dotfiles
 
-Welcome to my personal dotfiles repository. Here I host and manage the configuration files for my workspace. 
+Welcome to my personal dotfiles repository. Here I host and manage the configuration files for my workspace.
+
+<p align="center">
+  <img src="Pictures/demos/demo1.png" alt="Demo 1" width="48.8%">
+  &nbsp;
+  <img src="Pictures/demos/demo2.png" alt="Demo 2" width="48.8%">
+</p>
 
 ## Environment Details
 
