@@ -62,5 +62,49 @@ return {
         end,
     },
 
+    {
+        "goolord/alpha-nvim",
+        dependencies = { "nvim-web-devicons" },
+        config = function()
+            local alpha = require("alpha")
+            local dashboard = require("alpha.themes.dashboard")
+
+            -- Logo personalizado de STRIX
+            dashboard.section.header.val = {
+                [[                                     ]],
+                [[  _____ _______ _____  _______   __  ]],
+                [[ / ____|__   __|  __ \|_   _\ \ / /  ]],
+                [[| (___    | |  | |__) | | |  \ V /   ]],
+                [[ \___ \   | |  |  _  /  | |   > <    ]],
+                [[ ____) |  | |  | | \ \ _| |_ / . \   ]],
+                [[|_____/   |_|  |_|  \_\_____/_/ \_\  ]],
+                [[                                     ]],
+                [[        -- OS DEVELOPMENT --         ]],
+                [[                                     ]],
+            }
+
+            dashboard.section.buttons.val = {
+                dashboard.button("e", "  File Explorer", ":NvimTreeToggle<CR>"),
+                dashboard.button("n", "  New File", ":ene <BAR> startinsert<CR>"),
+                dashboard.button("c", "  Configuration", ":e ~/.config/nvim/init.lua<CR>"),
+                dashboard.button("q", "󰅙  Quit", ":qa<CR>"),
+            }
+
+            vim.api.nvim_set_hl(0, "AlphaHeader", { fg = "#cba6f7", bold = true })
+            dashboard.section.header.opts.hl = "AlphaHeader"
+
+            dashboard.config.layout = {
+                { type = "padding", val = 4 },
+                dashboard.section.header,
+                { type = "padding", val = 2 },
+                dashboard.section.buttons,
+                { type = "padding", val = 1 },
+                dashboard.section.footer,
+            }
+
+            alpha.setup(dashboard.opts)
+        end,
+    }
+
 }
 
