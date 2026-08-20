@@ -104,6 +104,77 @@ return {
 
             alpha.setup(dashboard.opts)
         end,
+    },
+
+    {
+        "vyfor/cord.nvim",
+        build = ":Cord update",
+        event = "VeryLazy",
+        opts = {
+            usercmds = true,
+            log = { level = "error" },
+            timer = {
+                enable = true,
+                interval = 1000,
+                reset_on_idle = false,
+                reset_on_change = false,
+            },
+            editor = {
+                client = "neovim",
+                tooltip = "Neovim IDE",
+            },
+            display = {
+                show_time = true,
+                show_repository = true,
+                show_cursor_position = true,
+                swap_fields = false,
+                swap_icons = false,
+            },
+            idle = {
+                enable = true,
+                show_idle = true,
+                timeout = 300000,
+                tooltip = "Away from keyboard",
+                text = "Idle / AFK",
+            },
+
+            text = {
+                workspace = function(opts) 
+                    return "In " .. (opts.workspace or "Neovim") 
+                end,
+                viewing = function(opts) 
+                    return "Viewing " .. (opts.filename or "a file") 
+                end,
+                editing = function(opts) 
+                    return "Editing " .. (opts.filename or "a file") 
+                end,
+                file_browser = function(opts)
+                    return "Browsing " .. (opts.name or "files")
+                end,
+                plugin_manager = "Managing Plugins (Lazy)",
+                lsp = "Configuring LSP",
+                docs = "Reading Documentation",
+                vcs = "Working with Git",
+                notes = "Taking Notes",
+                debug = "Debugging Code",
+                terminal = "In Terminal",
+            },
+
+            buttons = {
+                {
+                    label = "View GitHub Profile",
+                    url = "https://github.com/S-havl",
+                },
+            },
+            advanced = {
+                discord = {
+                    reconnect = {
+                        enabled = true,
+                        interval = 5000,
+                    },
+                },
+            },
+        },
     }
 
 }
