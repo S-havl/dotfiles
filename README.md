@@ -8,6 +8,8 @@ Welcome to my personal dotfiles repository. Here I host and manage the configura
   <img src="Pictures/demos/demo2.png" alt="Demo 2" width="48.8%">
   &nbsp;
   <img src="Pictures/demos/demo3.png" alt="Demo 3" width="48.8%">
+  &nbsp;
+  <img src="Pictures/demos/demo4.png" alt="Demo 4" width="48.8%">
 </p>
 
 ## Environment Details
