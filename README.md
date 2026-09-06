@@ -3,13 +3,13 @@
 Welcome to my personal dotfiles repository. Here I host and manage the configuration files for my workspace.
 
 <p align="center">
-  <img src="Pictures/demos/demo1.png" alt="Demo 1" width="48.8%">
+  <img src="Pictures/demos/demo1.png" alt="Demo 1" width="48%">
   &nbsp;
-  <img src="Pictures/demos/demo2.png" alt="Demo 2" width="48.8%">
+  <img src="Pictures/demos/demo2.png" alt="Demo 2" width="48%">
   &nbsp;
-  <img src="Pictures/demos/demo3.png" alt="Demo 3" width="48.8%">
+  <img src="Pictures/demos/demo3.png" alt="Demo 3" width="48%">
   &nbsp;
-  <img src="Pictures/demos/demo4.png" alt="Demo 4" width="48.8%">
+  <img src="Pictures/demos/demo4.png" alt="Demo 4" width="48%">
 </p>
 
 ## Environment Details
