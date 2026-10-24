@@ -9,7 +9,34 @@ return {
                 glow = false,
             })
             vim.cmd.colorscheme("darkvoid") 
-        end 
+
+            -- local tactical_color = "#b58900" 
+
+            local tactical_color = "#859900" 
+
+            local military_groups = {
+                "Constant", "String", "Character", "Number", "Boolean", "Float",
+                "Identifier", "Function", "Statement", "Conditional", "Repeat", 
+                "Label", "Operator", "Keyword", "Exception", "PreProc", "Include", 
+                "Define", "Macro", "PreCondit", "Type", "StorageClass", "Structure", 
+                "Typedef", "Special", "SpecialChar", "Tag", "Delimiter", "SpecialComment", 
+                "Debug", "Underlined", "Error", "Todo", "Comment", "Normal",
+                "@variable", "@variable.builtin", "@variable.parameter", "@variable.member",
+                "@constant", "@constant.builtin", "@constant.macro",
+                "@string", "@string.escape", "@string.regexp", "@string.special",
+                "@character", "@character.special", "@number", "@boolean", "@number.float",
+                "@function", "@function.builtin", "@function.macro", "@function.method",
+                "@constructor", "@operator",
+                "@keyword", "@keyword.coroutine", "@keyword.function", "@keyword.operator", "@keyword.return",
+                "@type", "@type.builtin", "@type.qualifier", "@type.definition",
+                "@attribute", "@property", "@punctuation", "@comment",
+                "@tag", "@tag.attribute", "@tag.delimiter"
+            }
+
+            for _, group in ipairs(military_groups) do
+                pcall(vim.api.nvim_set_hl, 0, group, { fg = tactical_color })
+            end
+        end
     },
 
     {
